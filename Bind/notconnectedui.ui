@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NotConnectedUI</class>
+ <widget class="QWidget" name="NotConnectedUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>506</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background-color: #f2f2f2;
+	padding: 0px;
+}
+
+QPushButton{
+    background-color: #0078d4;
+    padding: 5px;
+    border-radius:3px;
+	min-height:20px;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+}
+
+QPushButton:hover{
+    background-color: #106ebe;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #005a9e;
+
+}
+
+QLineEdit{
+    border-radius:3px;
+	background-color: #ffffff;
+
+}
+
+QTextEdit{
+    border: 3px solid white;
+    border-radius:3px;
+	background-color: #ffffff;
+}
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>100</y>
+     <width>181</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="text">
+    <string>生成的二维码</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_1">
+   <property name="geometry">
+    <rect>
+     <x>74</x>
+     <y>340</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>IP信息：</string>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Create_Button">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>300</y>
+     <width>61</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>生成</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>370</y>
+     <width>271</width>
+     <height>101</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_SwitchIP">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>300</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>更换IP</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_use">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>300</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>使用</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
