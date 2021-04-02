@@ -1,25 +1,20 @@
-#include "widget.h"
-#include "mainmenu.h"
-#include "globalapplication.h"
+#include "mainwindow.h"
+#include <QFile>
 #include <QApplication>
-#include <QSplashScreen>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    //GlobalApplication a(argc, argv);
-    //程序加载界面
-    QPixmap splScreenPix(":/DreamLink_icon.png");
-    QSplashScreen splScr(splScreenPix);
-    splScr.show();
+    QString qss;
+    QFile qssFile(":/BinDreamUI.qss");
+    qssFile.open(QFile::ReadOnly);
+    if(qssFile.isOpen()){
+        qss = QLatin1String(qssFile.readAll());
+        qApp->setStyleSheet(qss);
+        qssFile.close();
+    }
 
-
-
-
-    Widget w;
-    //MainMenu m(&w);
-    //w.show();
-    //m.show();
-    splScr.finish(&w);
+    MainWindow w;
+    w.show();
     return a.exec();
 }

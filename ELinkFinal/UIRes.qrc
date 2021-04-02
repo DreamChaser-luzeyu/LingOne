@@ -1,6 +1,7 @@
 <RCC>
     <qresource prefix="/">
-        <file>DreamLink_icon.png</file>
-        <file>logo.ico</file>
+        <file>BinDreamUI.qss</file>
+        <file>TitleBar.png</file>
+        <file>btn_n.png</file>
     </qresource>
 </RCC>
