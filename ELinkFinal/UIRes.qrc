@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>DreamLink_icon.png</file>
+        <file>logo.ico</file>
+    </qresource>
+</RCC>
