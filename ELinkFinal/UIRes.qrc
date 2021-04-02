@@ -1,7 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>BinDreamUI.qss</file>
-        <file>TitleBar.png</file>
-        <file>btn_n.png</file>
-    </qresource>
-</RCC>
