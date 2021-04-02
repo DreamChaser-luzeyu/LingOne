@@ -35,7 +35,7 @@ void RecFile::on_btn_acceptFile_clicked()
     QElapsedTimer t;
     t.start();
     while(t.elapsed()<500);
-    AdbCommand* adbc = new AdbCommand();
+    AdbCommand* adbc = new AdbCommand();//调试时无法正常收到文件，正常现象
     adbc->runCommand(cmd);
     QDesktopServices::openUrl(QUrl(url, QUrl::TolerantMode));
     hide();

@@ -154,14 +154,14 @@ QListView{
   <widget class="QPushButton" name="btn_select">
    <property name="geometry">
     <rect>
-     <x>480</x>
+     <x>490</x>
      <y>320</y>
-     <width>91</width>
+     <width>80</width>
      <height>30</height>
     </rect>
    </property>
    <property name="text">
-    <string>仅选中设备</string>
+    <string>选中设备</string>
    </property>
   </widget>
  </widget>

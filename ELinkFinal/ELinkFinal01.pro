@@ -1,8 +1,10 @@
-QT       += core gui network core5compat
+QT       += core gui network core5compat testlib
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++11
+
+#include(./QHotkey/qhotkey.pri)
 
 # You can make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
@@ -14,6 +16,7 @@ SOURCES += \
     QrSegment.cpp \
     adbcommand.cpp \
     dialogdemo.cpp \
+    firstrunwizard.cpp \
     main.cpp \
     mainmenu.cpp \
     mytcp.cpp \
@@ -30,6 +33,7 @@ HEADERS += \
     QrSegment.hpp \
     adbcommand.h \
     dialogdemo.h \
+    firstrunwizard.h \
     mainmenu.h \
     mytcp.h \
     notconnectedui.h \
@@ -41,6 +45,7 @@ HEADERS += \
 
 FORMS += \
     dialogdemo.ui \
+    firstrunwizard.ui \
     mainmenu.ui \
     notconnectedui.ui \
     recfile.ui \

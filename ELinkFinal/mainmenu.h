@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include <QHostAddress>
+#include "firstrunwizard.h"
+#include <QKeyEvent>
 
 namespace Ui {
 class MainMenu;
@@ -32,8 +34,12 @@ private slots:
 
     void on_pushButton_5_clicked();
 
+    void on_btn_settings_clicked();
+
 private:
     Ui::MainMenu *ui;
+    FirstRunWizard* frw;
+    void keyPressEvent(QKeyEvent* event);
 };
 
 #endif // MAINMENU_H

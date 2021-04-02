@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FirstRunWizard</class>
+ <widget class="QDialog" name="FirstRunWizard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>610</width>
+    <height>411</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background-color: #f2f2f2;
+	padding: 0px;
+}
+
+QPushButton{
+    background-color: #0078d4;
+    padding: 5px;
+    border-radius:3px;
+	min-height:20px;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+}
+
+QPushButton:hover{
+    background-color: #106ebe;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #005a9e;
+
+}
+
+QLineEdit{
+    border-radius:10px;
+	background-color: #ffffff;
+
+}
+
+QTextEdit{
+    border: 3px solid white;
+    border-radius:10px;
+	background-color: #ffffff;
+}
+
+QListView{
+    border: 3px solid white;
+    border-radius:10px;
+	background-color: #ffffff;
+}
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>0</y>
+     <width>631</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+    background-color: #0078d4;
+    padding: 5px;
+    border-radius:3px;
+	min-height:20px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}</string>
+   </property>
+   <property name="text">
+    <string>        设置</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_save">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>150</y>
+     <width>151</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>保存（立即生效）</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="le_adbport">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>90</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>90</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ADB端口号：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>90</y>
+     <width>221</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1000~65535，不能与TCP端口重复</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>120</y>
+     <width>221</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1000~65535，不能与ADB端口重复</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="le_tcpport">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>120</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>120</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TCP端口号：</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_add">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>190</y>
+     <width>311</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>添加&quot;发送到手机&quot;到文件右键菜单</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_remove">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>190</y>
+     <width>41</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>移除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_close">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>370</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

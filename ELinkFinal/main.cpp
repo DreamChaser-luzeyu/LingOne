@@ -1,13 +1,13 @@
 #include "widget.h"
 #include "mainmenu.h"
-
+#include "globalapplication.h"
 #include <QApplication>
 #include <QSplashScreen>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-
+    //GlobalApplication a(argc, argv);
     //程序加载界面
     QPixmap splScreenPix(":/DreamLink_icon.png");
     QSplashScreen splScr(splScreenPix);

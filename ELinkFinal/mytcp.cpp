@@ -16,6 +16,7 @@ MyTcp::MyTcp(QString ipAddr, int port){
     this->ipAddr = ipAddr;
     this->port = port;
     mSocket = new QTcpSocket;
+    mServer = new QTcpServer;
 }
 
 void MyTcp::connectToHost(){

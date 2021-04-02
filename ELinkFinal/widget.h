@@ -11,6 +11,7 @@
 #include <QSystemTrayIcon>
 
 
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
 QT_END_NAMESPACE
@@ -59,6 +60,7 @@ private slots:
 private:
     void setUIShadow();
     void mSleep(int msec);
+    void readConf();
     Ui::Widget *ui;
     NotConnectedUI* ncui;
     MainMenu* mainUI;
