@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainMenu</class>
+ <widget class="QWidget" name="MainMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>907</width>
+    <height>586</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <stylestrategy>PreferAntialias</stylestrategy>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainMenu</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background-color: #f2f2f2;
+	padding: 0px;
+}
+
+
+
+QPushButton{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #fcfcfc,stop:1 #f6f6f6);
+    padding: 5px;
+    border-radius:6px;
+	/*min-height:10px;*/
+    color: #000000;
+    font-size: 11px;
+    text-align: center;
+	color:#535353;
+}
+
+QPushButton:hover{
+    background-color: #f5f5f5;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #eeeeee;
+
+}
+
+
+QLineEdit{
+    border-radius:10px;
+	background-color: #ffffff;
+
+}
+
+QTextEdit{
+    border: 3px solid white;
+    border-radius:10px;
+	background-color: #ffffff;
+}
+
+QListView{
+    border: 3px solid white;
+    border-radius:10px;
+	background-color: #ffffff;
+}
+</string>
+  </property>
+  <widget class="QPushButton" name="btn_update">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>80</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    /*background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #fcfcfc,stop:1 #f6f6f6);*/
+	background-color:#f1f1f1;
+    padding: 5px;
+    border-radius:6px;
+	min-height:10px;
+    color: #000000;
+    font-size: 11px;
+    text-align: center;
+}
+
+QPushButton:hover{
+    background-color: #f5f5f5;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #eeeeee;
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/update.png</normaloff>:/update.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_settings">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>80</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    /*background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #fcfcfc,stop:1 #f6f6f6);*/
+	background-color:#f1f1f1;
+    padding: 5px;
+    border-radius:6px;
+	min-height:10px;
+    color: #000000;
+    font-size: 11px;
+    text-align: center;
+}
+
+QPushButton:hover{
+    background-color: #f5f5f5;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #eeeeee;
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/settings.png</normaloff>:/settings.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_about">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>80</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    /*background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #fcfcfc,stop:1 #f6f6f6);*/
+	background-color:#f1f1f1;
+    padding: 5px;
+    border-radius:6px;
+	min-height:10px;
+    color: #000000;
+    font-size: 11px;
+    text-align: center;
+}
+
+QPushButton:hover{
+    background-color: #f5f5f5;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #eeeeee;
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/about.png</normaloff>:/about.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_minimize">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>60</y>
+     <width>10</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #FFBE2F,stop:1 #F2B42B);
+    padding: 5px;
+    border-radius:5px;
+    color: #000000;
+    font-size: 11px;
+    text-align: center;
+}
+
+QPushButton:hover{
+    background-color: #BF8E21;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #8C6818;
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>50</y>
+     <width>581</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+
+    border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border: 3px solid #f1f1f1;
+	background-color: #F1F1F1;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>60</y>
+     <width>28</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	background-color: #f2f2f2;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>:/phone.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>63</y>
+     <width>26</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	background-color: #000000;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>:/disconnect.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_background">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>50</y>
+     <width>581</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	border: 3px solid #EDEDED;
+    border-radius:8px;
+	background-color: #EDEDED;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_close">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>60</y>
+     <width>10</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #FF5F58,stop:1 #FF6A58);
+    padding: 5px;
+    border-radius:5px;
+    color: #000000;
+    font-size: 11px;
+    text-align: center;
+}
+
+QPushButton:hover{
+    background-color: #CC5446;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #993F34;
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_switchdev">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>90</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #fcfcfc,stop:1 #f6f6f6);
+    padding: 5px;
+    border-radius:6px;
+	min-height:10px;
+    color: #606060;
+    font-size: 11px;
+    text-align: center;
+}
+
+QPushButton:hover{
+    background-color: #f5f5f5;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #eeeeee;
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string>激活或切换设备</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/switchdev.png</normaloff>:/switchdev.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_scrcpy">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>200</y>
+     <width>68</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #fcfcfc,stop:1 #f6f6f6);
+    padding: 5px;
+    border-radius:6px;
+	min-height:10px;
+    color: #000000;
+    font-size: 11px;
+    text-align: center;
+	color:#535353;
+}
+
+QPushButton:hover{
+    background-color: #f5f5f5;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #eeeeee;
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string>scrcpy</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/remote.png</normaloff>:/remote.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>86</x>
+     <y>135</y>
+     <width>551</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	border: 1px solid #DFDFDF;
+    border-radius:6px;
+	background-color: #E4E4E4;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_devname">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>55</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	color:#535353;
+    border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border: 3px solid #f1f1f1;
+	background-color: #F1F1F1;
+}</string>
+   </property>
+   <property name="text">
+    <string>未连接</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>95</x>
+     <y>150</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	color:#535353;
+    border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border: 3px solid #E4E4E4;
+	background-color: #E4E4E4;
+}</string>
+   </property>
+   <property name="text">
+    <string>多屏协同</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_wechat">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>200</y>
+     <width>68</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #fcfcfc,stop:1 #f6f6f6);
+    padding: 5px;
+    border-radius:6px;
+	min-height:10px;
+    color: #000000;
+    font-size: 11px;
+    text-align: center;
+	color:#535353;
+}
+
+QPushButton:hover{
+    background-color: #f5f5f5;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #eeeeee;
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string>微信</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/wechat.png</normaloff>:/wechat.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_tim">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>200</y>
+     <width>68</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #fcfcfc,stop:1 #f6f6f6);
+    padding: 5px;
+    border-radius:6px;
+	min-height:10px;
+    color: #000000;
+    font-size: 11px;
+    text-align: center;
+	color:#535353;
+}
+
+QPushButton:hover{
+    background-color: #f5f5f5;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #eeeeee;
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string>TIM</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/tim.png</normaloff>:/tim.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_qq">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>200</y>
+     <width>68</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #fcfcfc,stop:1 #f6f6f6);
+    padding: 5px;
+    border-radius:6px;
+	min-height:10px;
+    color: #000000;
+    font-size: 11px;
+    text-align: center;
+	color:#535353;
+}
+
+QPushButton:hover{
+    background-color: #f5f5f5;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #eeeeee;
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string>QQ</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/qq.png</normaloff>:/qq.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>95</x>
+     <y>173</y>
+     <width>201</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>9</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+     <stylestrategy>PreferAntialias</stylestrategy>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	color:#535353;
+    border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border: 3px solid #E4E4E4;
+	background-color: #E4E4E4;
+}</string>
+   </property>
+   <property name="text">
+    <string>在电脑上快速打开手机应用</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_tim_file">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>290</y>
+     <width>68</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #fcfcfc,stop:1 #f6f6f6);
+    padding: 5px;
+    border-radius:6px;
+	min-height:10px;
+    color: #000000;
+    font-size: 11px;
+    text-align: center;
+	color:#535353;
+}
+
+QPushButton:hover{
+    background-color: #f5f5f5;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #eeeeee;
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string>TIM</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/tim.png</normaloff>:/tim.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>95</x>
+     <y>240</y>
+     <width>161</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	color:#535353;
+    border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border: 3px solid #E4E4E4;
+	background-color: #E4E4E4;
+}</string>
+   </property>
+   <property name="text">
+    <string>文件管理</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_wechat_file">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>290</y>
+     <width>68</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #fcfcfc,stop:1 #f6f6f6);
+    padding: 5px;
+    border-radius:6px;
+	min-height:10px;
+    color: #000000;
+    font-size: 11px;
+    text-align: center;
+	color:#535353;
+}
+
+QPushButton:hover{
+    background-color: #f5f5f5;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #eeeeee;
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string>微信</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/wechat.png</normaloff>:/wechat.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_qq_file">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>290</y>
+     <width>68</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #fcfcfc,stop:1 #f6f6f6);
+    padding: 5px;
+    border-radius:6px;
+	min-height:10px;
+    color: #000000;
+    font-size: 11px;
+    text-align: center;
+	color:#535353;
+}
+
+QPushButton:hover{
+    background-color: #f5f5f5;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #eeeeee;
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string>QQ</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/qq.png</normaloff>:/qq.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>95</x>
+     <y>263</y>
+     <width>201</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>9</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	color:#535353;
+    border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border: 3px solid #E4E4E4;
+	background-color: #E4E4E4;
+}</string>
+   </property>
+   <property name="text">
+    <string>管理手机中的文件</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_allfile">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>290</y>
+     <width>68</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #fcfcfc,stop:1 #f6f6f6);
+    padding: 5px;
+    border-radius:6px;
+	min-height:10px;
+    color: #000000;
+    font-size: 11px;
+    text-align: center;
+	color:#535353;
+}
+
+QPushButton:hover{
+    background-color: #f5f5f5;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #eeeeee;
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string>全部</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/files.png</normaloff>:/files.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>360</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>debug</string>
+   </property>
+  </widget>
+  <zorder>label_background</zorder>
+  <zorder>label</zorder>
+  <zorder>btn_update</zorder>
+  <zorder>btn_settings</zorder>
+  <zorder>btn_about</zorder>
+  <zorder>btn_close</zorder>
+  <zorder>btn_minimize</zorder>
+  <zorder>label_3</zorder>
+  <zorder>btn_switchdev</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_devname</zorder>
+  <zorder>label_6</zorder>
+  <zorder>btn_scrcpy</zorder>
+  <zorder>btn_wechat</zorder>
+  <zorder>btn_tim</zorder>
+  <zorder>btn_qq</zorder>
+  <zorder>label_7</zorder>
+  <zorder>btn_tim_file</zorder>
+  <zorder>label_8</zorder>
+  <zorder>btn_wechat_file</zorder>
+  <zorder>btn_qq_file</zorder>
+  <zorder>label_9</zorder>
+  <zorder>btn_allfile</zorder>
+  <zorder>pushButton</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

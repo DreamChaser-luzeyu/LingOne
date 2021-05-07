@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReceiveFile</class>
+ <widget class="QDialog" name="ReceiveFile">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>80</y>
+     <width>281</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit{
+    border: 2px solid #f0f0f0;
+    border-radius:6px;
+	background-color: #fdfdfd;
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_cancel">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>200</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #fcfcfc,stop:1 #f6f6f6);
+    padding: 5px;
+    border-radius:6px;
+	min-height:10px;
+    color: #606060;
+    font-size: 14px;
+    text-align: center;
+}
+
+QPushButton:hover{
+    background-color: #f5f5f5;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #eeeeee;
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>341</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+    border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border: 3px solid #f1f1f1;
+	background-color: #F1F1F1;
+}</string>
+   </property>
+   <property name="text">
+    <string>        接收文件</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_acceptFile">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>200</y>
+     <width>111</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #488FE9,stop:1 #4188E6);
+    padding: 5px;
+	border:1px solid #3178d6;
+    border-radius:6px;
+	min-height:20px;
+    color: #EDFFFF;
+    font-size: 14px;
+    text-align: center;
+}
+
+QPushButton:hover{
+    background-color: #106ebe;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #005a9e;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>确认接收</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_background">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>341</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	border: 3px solid #EDEDED;
+    border-radius:8px;
+	background-color: #EDEDED;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_background</zorder>
+  <zorder>textEdit</zorder>
+  <zorder>btn_cancel</zorder>
+  <zorder>label</zorder>
+  <zorder>btn_acceptFile</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConnectDev</class>
+ <widget class="QDialog" name="ConnectDev">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>875</width>
+    <height>442</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background-color: #f2f2f2;
+	padding: 0px;
+}
+
+
+
+QPushButton{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #fcfcfc,stop:1 #f6f6f6);
+    padding: 5px;
+    border-radius:6px;
+	/*min-height:10px;*/
+    color: #000000;
+    font-size: 11px;
+    text-align: center;
+	color:#535353;
+}
+
+QPushButton:hover{
+    background-color: #f5f5f5;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #eeeeee;
+
+}
+
+
+QLineEdit{
+    border-radius:10px;
+	background-color: #ffffff;
+
+}
+
+QTextEdit{
+    border: 3px solid white;
+    border-radius:10px;
+	background-color: #ffffff;
+}
+
+QListView{
+    border: 3px solid white;
+    border-radius:10px;
+	background-color: #ffffff;
+}
+</string>
+  </property>
+  <widget class="QPushButton" name="btn_switch">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>230</y>
+     <width>81</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #fcfcfc,stop:1 #f6f6f6);
+    padding: 5px;
+    border-radius:6px;
+	min-height:10px;
+    color: #000000;
+    font-size: 11px;
+    text-align: center;
+}
+
+QPushButton:hover{
+    background-color: #f5f5f5;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #eeeeee;
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string>切换网卡</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/switch.png</normaloff>:/switch.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_background">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>60</y>
+     <width>281</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	border: 3px solid #EDEDED;
+    border-radius:8px;
+	background-color: #EDEDED;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QListView" name="listView">
+   <property name="geometry">
+    <rect>
+     <x>142</x>
+     <y>120</y>
+     <width>241</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListView{
+    border: 2px solid #f0f0f0;
+    border-radius:6px;
+	background-color: #fdfdfd;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>60</y>
+     <width>281</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+
+    border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border: 3px solid #f1f1f1;
+	background-color: #F1F1F1;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_refresh">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>230</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #fcfcfc,stop:1 #f6f6f6);
+    padding: 5px;
+    border-radius:6px;
+	min-height:10px;
+    color: #000000;
+    font-size: 11px;
+    text-align: center;
+}
+
+QPushButton:hover{
+    background-color: #f5f5f5;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #eeeeee;
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="UIres.qrc">
+     <normaloff>:/refresh.png</normaloff>:/refresh.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_ip">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>100</y>
+     <width>108</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	border: 3px solid #EDEDED;
+    border-radius:8px;
+	background-color: #EDEDED;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_close">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>75</y>
+     <width>10</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #FF5F58,stop:1 #FF6A58);
+    padding: 5px;
+    border-radius:5px;
+    color: #000000;
+    font-size: 11px;
+    text-align: center;
+}
+
+QPushButton:hover{
+    background-color: #CC5446;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #993F34;
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_select">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>230</y>
+     <width>80</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #488FE9,stop:1 #4188E6);
+    padding: 5px;
+	border:1px solid #3178d6;
+    border-radius:6px;
+	min-height:20px;
+    color: #EDFFFF;
+    font-size: 14px;
+    text-align: center;
+}
+
+QPushButton:hover{
+    background-color: #106ebe;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #005a9e;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>选中</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_help">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>65</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    /*background-color: qlineargradient(x1:0, y1:0, x2:0, y2:0.75,stop:0 #fcfcfc,stop:1 #f6f6f6);*/
+	background-color:#f1f1f1;
+    padding: 5px;
+    border-radius:6px;
+	min-height:10px;
+    color: #000000;
+    font-size: 11px;
+    text-align: center;
+}
+
+QPushButton:hover{
+    background-color: #f5f5f5;
+
+    
+}
+
+QPushButton:pressed{
+    background-color: #eeeeee;
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="UIres.qrc">
+     <normaloff>:/help.png</normaloff>:/help.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>70</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	color:#535353;
+    border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border: 3px solid #f1f1f1;
+	background-color: #F1F1F1;
+}</string>
+   </property>
+   <property name="text">
+    <string>连接设备</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <zorder>label_background</zorder>
+  <zorder>label_ip</zorder>
+  <zorder>btn_select</zorder>
+  <zorder>listView</zorder>
+  <zorder>btn_refresh</zorder>
+  <zorder>label</zorder>
+  <zorder>btn_help</zorder>
+  <zorder>btn_close</zorder>
+  <zorder>label_5</zorder>
+  <zorder>btn_switch</zorder>
+ </widget>
+ <resources>
+  <include location="UIres.qrc"/>
+ </resources>
+ <connections/>
+</ui>

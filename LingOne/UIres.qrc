@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>BindIcon.png</file>
+        <file>logo.ico</file>
+        <file>settings.png</file>
+        <file>update.png</file>
+        <file>about.png</file>
+        <file>remote.png</file>
+        <file>minimize.png</file>
+        <file>help.png</file>
+        <file>phone.png</file>
+        <file>disconnect.png</file>
+        <file>close.png</file>
+        <file>switchdev.png</file>
+        <file>tim.png</file>
+        <file>qq.png</file>
+        <file>wechat.png</file>
+        <file>files.png</file>
+        <file>refresh.png</file>
+    </qresource>
+    <qresource prefix="/qt/etc">
+        <file>qt.conf</file>
+    </qresource>
+</RCC>
