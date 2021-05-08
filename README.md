@@ -5,7 +5,7 @@
 
 ## 一. 作业题目
 
-基于Qt的Android与PC端快速文件传输、文件管理、多屏协作工具。应学校要求，故将实验报告上交于仓库。
+基于Qt的Android与PC端快速文件传输、文件管理、多屏协作工具。应学校要求，故将实验报告上交于仓库。[Android端地址](https://github.com/DreamChaser-luzeyu/LingOne-Android)
 
 ## 二.开发软件
 
