@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>adb.exe</file>
+        <file>AdbWinApi.dll</file>
+        <file>AdbWinUsbApi.dll</file>
+    </qresource>
+</RCC>
