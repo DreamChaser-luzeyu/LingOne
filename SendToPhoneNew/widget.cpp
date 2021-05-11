@@ -23,6 +23,7 @@ Widget::Widget(QWidget *parent)
     ui->btn_select->setVisible(false);
 
     qDebug()<<filePath;
+    ui->label_filepath->setText(filePath);
     //adbc = new AdbCommand("D:/PortableSoftware/platform-tools");
     adbc = new AdbCommand(QApplication::applicationDirPath());
     refreshListView();
@@ -88,7 +89,9 @@ void Widget::on_btn_select_clicked()
     mkdircmd << "-s" << devS << "shell" << "mkdir" << "/sdcard/BindFileReceive";
     adbc->runCommand(mkdircmd);
     QStringList pushcmd;
-    pushcmd << "-s" << devS << "push" << filePath << "/sdcard/BindFileReceive";
+    QString fileName;
+    fileName = filePath.split("\\")[filePath.split("\\").size()-1];
+    pushcmd << "-s" << devS << "push" << filePath << "/sdcard/BindFileReceive/" + fileName;
     adbc->runCommand(pushcmd);
 
     this->close();

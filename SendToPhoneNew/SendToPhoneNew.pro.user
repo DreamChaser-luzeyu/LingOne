@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.14.0, 2021-04-14T21:53:54. -->
+<!-- Written by QtCreator 4.14.0, 2021-05-11T13:44:38. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -296,6 +296,7 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:D:/Learning/Qt/SendToPhoneNew/SendToPhoneNew.pro</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/Learning/Qt/SendToPhoneNew/SendToPhoneNew.pro</value>
+    <value type="QString" key="RunConfiguration.Arguments">你好 world</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
