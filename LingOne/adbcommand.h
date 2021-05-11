@@ -15,7 +15,6 @@ public:
     AdbCommand(QString);
 
     QString runCommand(QStringList);
-    //static QString runCommand(QStringList, int);
     QString runOtherCommand(QString, QStringList);
     QString runOtherCommandModal(QString,QStringList);
 

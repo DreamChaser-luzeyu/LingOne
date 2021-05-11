@@ -96,7 +96,7 @@ void Settings::on_btn_add_clicked()
     out << "\n";
     out << "[HKEY_CLASSES_ROOT\\*\\shell\\BindSendToPhone\\command]" << "\n";
     currentDir.replace("/","\\\\");
-    out << "@=\"" << currentDir << "\\\\BindSendToPhone.exe" << " %1\"";
+    out << "@=\"" << currentDir << "\\\\BindSendToPhone.exe " << "\\\"%1\\\"\"";
     out.flush();
     file.close();
     currentDir.replace("\\\\","/");
